@@ -1,3 +1,8 @@
 *.tar
 *.tar.gz
 *.tgz
+
+# archives
+*.tar
+*.tar.gz
+*.tgz
