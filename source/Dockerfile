@@ -16,9 +16,9 @@ COPY requirements.txt .
 # Устанавливаем зависимости из wheel-пакетов
 RUN pip install --no-index --find-links=/wheels -r requirements.txt
 # Копируем исходный код приложения
-COPY hello.py .
+COPY app.py .
 
 # Переменные окружения для улучшенной работы Python
 ENV PYTHONUNBUFFERED=1
 # Запускаем приложение
-CMD ["python", "hello.py"]
+CMD ["python", "app.py", "Viktoriia", "--lastname", "Lavrukhina", "--formal"]
